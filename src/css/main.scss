@@ -1,5 +1,8 @@
 /* HEADER */
-.header-nav--nav {border: 0; border-bottom: 1px solid #a0a0a0; margin-bottom: 0;}
+
+$lightGray: #a0a0a0;
+
+.header-nav--nav {border: 0; border-bottom: 1px solid $lightGray; margin-bottom: 0;}
 
 .header-nav--nav .header-nav--main ul {margin: 10px 0 10px;}
 .header-nav--nav .header-nav--main ul li.nav-item {font-size: 14px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.2px; padding-bottom: 10px;}
@@ -45,7 +48,7 @@
 }
 
 /* HERO */
-.crf-hero {background-image: url('https://www.pluralsight.com/content/dam/pluralsight2/teach/author-tools/carved-rock-fitness/hero_bkgd_v1.jpg'); background-repeat: no-repeat; height: 400px; background-size: cover; background-position: center center; text-align: center;}
+.crf-hero {background-image: url('../images/hero_bkgd_v1.jpg'); background-repeat: no-repeat; height: 400px; background-size: cover; background-position: center center; text-align: center;}
 .crf-hero h1, .crf-hero h2 {font-size: 63px; font-weight: 700; margin: 0; flex: inherit; line-height: 0.9;}
 .crf-hero h1 {left: -30px;}
 .crf-hero h2 {color: #faa541;}
@@ -182,7 +185,7 @@ footer .crf-footer--copyright {text-align: center; font-size: 12px; flex: 0 0 75
     footer {flex-direction: column; background: transparent;}
     footer:after {width: 100%; background: transparent;}
 
-    footer .crf-footer--category {background: #a0a0a0; padding-bottom: 0;}
+    footer .crf-footer--category {background: $lightGray; padding-bottom: 0;}
     footer .crf-footer--logo {background: black; margin: 50px 20px;}
 
     footer .crf-footer--links:after {content: ""; display: block; height: 2px; background: white; margin: 10px -15px 10px;}

@@ -1,4 +1,9 @@
 import util from "./util";
+import "./css/main.scss"
+// import msg from "./message.txt"
+import "./images/carved-rock-logo.png"
+
+// console.log(msg)
 
 const cart = [];
 
@@ -11,5 +16,13 @@ function removeFromCart(idx) {
   cart.splice(idx, 1);
   util.log("removed: " + idx);
 }
+
+function getUsers() {
+  fetch("/api/users")
+  .then(res => res.json())
+  .then(users => console.log("Our second user is " + users[1].name))
+}
+
+getUsers();
 
 addToCart("Waterproof Boots");
